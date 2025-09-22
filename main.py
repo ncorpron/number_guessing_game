@@ -2,6 +2,19 @@ import random
 EASY_LEVEL_TURNS = 10
 HARD_LEVEL_TURNS = 5
 
+logo =  __    __  ___   __    __       __  ___________  ____  ________      ___________  __    __    _______      _____  ___   ____  ____  ___      ___  _______    _______   _______  ________   
+|"  |/  \|  "| /" |  | "\     /""\("     _   ")))_ ")/"       )    ("     _   ")/" |  | "\  /"     "|    (\"   \|"  \ ("  _||_ " ||"  \    /"  ||   _  "\  /"     "| /"      \("      "\  
+|'  /    \:  |(:  (__)  :)   /    \)__/  \\__/(____((:   \___/      )__/  \\__/(:  (__)  :)(: ______)    |.\\   \    ||   (  ) : | \   \  //   |(. |_)  :)(: ______)|:        |\___/   :) 
+|: /'        | \/      \/   /' /\  \  \\_ /          \___  \           \\_ /    \/      \/  \/    |      |: \.   \\  |(:  |  | . ) /\\  \/.    ||:     \/  \/    |  |_____/   )  /  ___/  
+ \//  /\'    | //  __  \\  //  __'  \ |.  |           __/  \\          |.  |    //  __  \\  // ___)_     |.  \    \. | \\ \__/ // |: \.        |(|  _  \\  // ___)_  //      /  //  \     
+ /   /  \\   |(:  (  )  :)/   /  \\  \\:  |          /" \   :)         \:  |   (:  (  )  :)(:      "|    |    \    \ | /\\ __ //\ |.  \    /:  ||: |_)  :)(:      "||:  __   \ ('___/     
+|___/    \___| \__|  |__/(___/    \___)\__|         (_______/           \__|    \__|  |__/  \_______)     \___|\____\)(__________)|___|\__/|___|(_______/  \_______)|__|  \___) (___)     
+                                                                                                                                                                                          
+
+
+
+
+
 # Function to check users' guess against actual answer
 def check_answer(user_guess, actual_answer, turns):
     """Checks answer against guess, returns the number of turns remaining."""
@@ -24,7 +37,7 @@ def set_difficulty():
         return HARD_LEVEL_TURNS
 
 def game():
-    '''print(logo)'''
+    print(logo)
     # Choosing a random number between 1 and 100.
     print("Welcome to the Number Guessing Game!")
     print("I'm thinking of a number between 1 and 100.")
